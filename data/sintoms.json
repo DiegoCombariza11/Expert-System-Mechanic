@@ -1,33 +1,24 @@
 {
-  "Antes de encender": {
-    "El motor no arranca": ["Posible falla en la batería", "Problema en el motor de arranque"],
-    "Luces delanteras débiles": ["Problema en la batería", "Falla en el alternador"],
-    "Batería descargada": ["Batería defectuosa o descargada"],
-    "Tablero no enciende": ["Fusible quemado", "Problema eléctrico general"]
+  "Sistema eléctrico": {
+    "Motor no arranca": {"fallas": ["Batería descargada", "Falta de gasolina"], "nivel": "critico"},
+    "Luces tenues": {"fallas": ["Batería descargada"], "nivel": "leve"},
+    "Claxon no funciona": {"fallas": ["Fusible quemado"], "nivel": "leve"},
+    "Indicador de batería parpadea": {"fallas": ["Problema en alternador"], "nivel": "critico"}
   },
-  "Al encender": {
-    "El motor tarda en arrancar": ["Bujías en mal estado", "Problema en el sistema de inyección"],
-    "Ruidos extraños al encender": ["Problema en el motor de arranque", "Desgaste en correas"],
-    "Testigo de aceite encendido": ["Falta de aceite", "Bomba de aceite defectuosa"],
-    "Olor a gasolina": ["Fuga de combustible", "Inyectores sucios"]
+  "Motor y lubricación": {
+    "Humo excesivo": {"fallas": ["Recalentamiento motor", "Problema en inyección"], "nivel": "critico"},
+    "Testigo de aceite": {"fallas": ["Nivel de aceite bajo"], "nivel": "critico"},
+    "Testigo de temperatura": {"fallas": ["Recalentamiento motor"], "nivel": "critico"},
+    "Arranque ruidoso": {"fallas": ["Motor de arranque desgastado"], "nivel": "leve"}
   },
-  "En marcha": {
-    "Humo excesivo": ["Problema en anillos del pistón", "Mezcla de combustible incorrecta"],
-    "Pérdida de potencia": ["Filtro de aire sucio", "Problema en bomba de combustible"],
-    "Motor se recalienta": ["Falla en sistema de refrigeración", "Falta de refrigerante"],
-    "Golpeteo metálico": ["Desajuste en válvulas", "Problemas en bielas"],
-    "Consumo elevado de combustible": ["Sensor de oxígeno defectuoso", "Problema en inyección"]
+  "Frenos y suspensión": {
+    "Frenos flojos": {"fallas": ["Problema en sistema de frenos"], "nivel": "critico"},
+    "Dirección dura": {"fallas": ["Falta de líquido de dirección"], "nivel": "critico"},
+    "Vibraciones fuertes": {"fallas": ["Desbalance de ruedas"], "nivel": "leve"},
+    "Ruidos extraños": {"fallas": ["Problema en suspensión"], "nivel": "leve"}
   },
-  "Conducción": {
-    "Dirección dura": ["Falla en dirección asistida", "Bomba hidráulica defectuosa"],
-    "Vibraciones en el volante": ["Llantas desbalanceadas", "Problema en suspensión"],
-    "Frenado deficiente": ["Pastillas de freno desgastadas", "Fugas en sistema de frenos"],
-    "Desviación al frenar": ["Desgaste desigual en frenos", "Problema en alineación"]
-  },
-  "Otros": {
-    "Ruido en suspensión": ["Amortiguadores dañados", "Bujes desgastados"],
-    "Aire acondicionado no enfría": ["Falta de gas refrigerante", "Compresor defectuoso"],
-    "Luces interiores apagadas": ["Fusible quemado", "Problema en cableado"],
-    "Problemas eléctricos generales": ["Alternador defectuoso", "Cortocircuito en sistema eléctrico"]
+  "Alertas críticas": {
+    "Luz de check engine": {"fallas": ["Fallo en sensor motor", "Fallo motor electrónico"], "nivel": "critico"},
+    "Alarma de frenos": {"fallas": ["Sistema de frenos comprometido"], "nivel": "critico"}
   }
 }
